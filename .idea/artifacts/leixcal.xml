@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="leixcal">
+    <output-path>$PROJECT_DIR$/out/artifacts/leixcal</output-path>
+    <root id="archive" name="leixcal.jar" />
+  </artifact>
+</component>

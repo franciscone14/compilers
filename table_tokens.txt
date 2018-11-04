@@ -1,0 +1,42 @@
+Tabela de simbolos:
+ADDR	VALUE
+509762	Teste
+509763	String
+509764	nome
+509765	idade
+509766	setNome
+509767	null
+
+
+Tokens:
+TIPO	VALOR
+20	public
+17	class
+53	509762
+42	{
+21	private
+53	509763
+53	509764
+47	;
+21	private
+6	int
+53	509765
+47	;
+20	public
+32	void
+53	509766
+44	(
+53	509763
+53	509764
+45	)
+42	{
+50	return
+26	this
+46	.
+53	509764
+36	=
+53	509764
+47	;
+43	}
+43	}
+-1	<EOF>
