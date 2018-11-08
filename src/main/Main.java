@@ -4,6 +4,7 @@ import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.misc.NotNull;
+import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Main {
+
     public static void main (String[] args) throws IOException {
         //A classe de entrada é passada como um argumento na chamada do java
         //Para executar na linha de comando faça: java -jar Lexical.jar "/home/path/Class.java"
@@ -26,7 +28,7 @@ public class Main {
         Hashtable<String, Integer> types = new Hashtable<String, Integer>();
         while((line = br.readLine()) != null){
             String[] values = line.split("=");
-            types.put(values[0], Integer.parseInt(values[1]));
+            types.put(values[0], Integer.parseInt(values[values.length - 1]));
         }
 
         //Criar o arquivo
@@ -62,6 +64,16 @@ public class Main {
         else{
             System.out.println("Compilação falhou !");
         }
+
+        JavaParser parser = new JavaParser(allTokensGenerated);
+        parser.setBuildParseTree(true);
+
+        JavaParserBaseVisitor visitor = new JavaParserBaseVisitor();
+        JavaParser.CompilationUnitContext tree = parser.compilationUnit();
+        System.out.println(tree.toStringTree(parser));
+//
+//        JavaParserBaseListener printer = new JavaParserBaseListener();
+//        ParseTreeWalker.DEFAULT.walk(printer, tree);
     }
 
     //Metodo para criar a tabela de simbolos
