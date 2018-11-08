@@ -5,7 +5,7 @@ options {
 }
 
 //Programs
-compilationUnit: packageDeclaration? importDeclarations? typeDeclarations?;
+compilationUnit: packageDeclaration? (importDeclarations)* typeDeclarations?;
 
 //Declarations
 packageDeclaration: PACKAGE packageName;
@@ -48,7 +48,7 @@ constructorModifier: PUBLIC | PROTECTED | PRIVATE;
 
 constructorDeclarator: ID AP formalParameterList? FP;
 
-formalParameterList: type variableDeclaratorId (VIRGULA type variableDeclaratorId)*;
+formalParameterList: type (AC FC)? variableDeclaratorId (VIRGULA type (AC FC)? variableDeclaratorId)*;
 
 formalParameter: type variableDeclaratorId;
 
@@ -58,9 +58,9 @@ classTypeList: classType (VIRGULA classType)*;
 
 constructorBody: ACH explicitConstructorInvocation? blockStatements? FCH;
 
-explicitConstructorInvocation: THIS AP argumentlist? FP | SUPER AP argumentlist? FP;
+explicitConstructorInvocation: THIS AP argumentlist? FP | SUPER AP argumentlist? FP PONTOV;
 
-fieldDeclaration: fieldModifiers? type variableDeclarators PONTOV;
+fieldDeclaration: fieldModifiers? type (AC FC)? variableDeclarators PONTOV;
 
 fieldModifiers: fieldModifier+;
 
@@ -78,7 +78,7 @@ methodDeclaration: methodHeader methodBody;
 
 methodHeader: methodModifiers? resultType methodDeclarator throwsRule?;
 
-resultType: type | VOID;
+resultType: type (AC FC)? | VOID;
 
 methodModifiers: methodModifier | methodModifiers methodModifier;
 
@@ -137,15 +137,15 @@ interfaceType: typeName;
 block: ACH blockStatements? FCH;
 blockStatements: blockStatement+;
 
-blockStatement: localVariableDeclarationStatement PONTOV | statement PONTOV;
+blockStatement: localVariableDeclarationStatement PONTOV | statement;
 
 localVariableDeclarationStatement: localVariableDeclaration;
 
 localVariableDeclaration: type variableDeclarators;
 
 statement: 
-    statementWithoutTrailingSubstatement | 
-    labeledStatement | ifThenStatement | 
+    statementWithoutTrailingSubstatement |
+    labeledStatement | ifThenStatement |
     ifThenElseStatement | whileStatement | forStatement;
 
 statementNoShortIf: 
@@ -155,7 +155,7 @@ statementNoShortIf:
     whileStatementNoShortIf | forStatementNoShortIf;
 
 statementWithoutTrailingSubstatement: 
-    block | expressionStatement | 
+    block | expressionStatement |
     switchStatement | doStatement | 
     breakStatement | continueStatement | 
     returnStatement | synchronizedStatement | 
@@ -169,8 +169,8 @@ labeledStatementNoShortIf: ID DOIS_PONTOS statementNoShortIf;
 expressionStatement: statementExpression;
 
 statementExpression: assignment | preIncrementExpression | 
-    postincrementExpression | preDecrementExpression | 
-    postdecrementExpression | methodInvocation | 
+    postIncrementExpression | preDecrementExpression | 
+    postDecrementExpression | methodInvocation PONTOV| 
     classInstanceCreationExpression;
 
 ifThenStatement: IF AP expression FP statement;
@@ -199,11 +199,11 @@ doStatement: DO statement WHILE AP expression FP;
 
 forStatement: FOR AP forInit? PONTOV expression? PONTOV forUpdate? FP statement;
 
-forStatementNoShortIf: FOR AP forInit? PONTOV expression? PONTOV forUpdate? FP statementNoShortIf;
+forStatementNoShortIf: FOR AP forInit? expression?  forUpdate? FP statementNoShortIf;
 
 forInit: statementExpressionList | localVariableDeclaration;
 
-forUpdate: statementExpressionList;
+forUpdate: statementExpression;
 
 statementExpressionList: statementExpression (VIRGULA statementExpression)*;
 
@@ -232,7 +232,7 @@ expression: assignmentExpression;
 
 assignmentExpression: conditionalExpression | assignment;
 
-assignment: leftHandSide assignmentOperator assignmentExpression;
+assignment: leftHandSide assignmentOperator assignmentExpression PONTOV;
 
 leftHandSide: expressionName | fieldAccess | arrayAccess;
 
@@ -290,14 +290,14 @@ preDecrementExpression: DEC unaryExpression;
 
 preIncrementExpression: INC unaryExpression;
 
-unaryExpressionNotPlusMinus: postfixExpression | NOT unaryExpression | 
+unaryExpressionNotPlusMinus: postFixExpression | NOT unaryExpression | 
     EXCLAMACAO unaryExpression | castExpression;
 
-postdecrementExpression: postfixExpression DEC;
+postDecrementExpression: postFixExpression DEC;
 
-postincrementExpression: postfixExpression INC;
+postIncrementExpression: postFixExpression INC;
 
-postfixExpression: primary | expressionName; //| postincrementExpression | postdecrementExpression;
+postFixExpression: primary | expressionName; //| postIncrementExpression | postDecrementExpression;
 
 methodInvocation: methodName AP argumentlist? FP | 
     SUPER PONTO ID AP argumentlist? FP;
@@ -345,15 +345,13 @@ stringLiteral | nullLiteral;
 
 integerLiteral: decimalIntegerLiteral | hexIntegerLiteral | octalIntegerLiteral;
 
-decimalIntegerLiteral: decimalNumeral INTEGER_TYPE_SUFFIX?;
+decimalIntegerLiteral: NUMERO INTEGER_TYPE_SUFFIX?;
 
 hexIntegerLiteral: HEX_NUMERAL INTEGER_TYPE_SUFFIX?;
 
 octalIntegerLiteral: OCTAL_NUMERAL INTEGER_TYPE_SUFFIX?;
 
-decimalNumeral: NUMERO;
-
-digits: DIGITO+;
+digits: NUMERO;
 
 floatingPointLiteral: digits PONTO digits? exponentPart? floatTypeSuffix?;
 
@@ -367,13 +365,13 @@ sign: ADD | SUB;
 
 floatTypeSuffix: FLOAT_S;
 
-booleanLiteral: LOGICAL;
-
 characterLiteral:  ASPAS LETRA  ASPAS; 
 
 // <single character>: <input character> except ' and \
 
-stringLiteral: STRING;
+stringLiteral: ID;
+
+booleanLiteral: TRUE | FALSE;
 
 // <string characters>: <string character> | <string characters> <string character>
 

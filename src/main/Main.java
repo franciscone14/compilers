@@ -19,7 +19,7 @@ public class Main {
         //Para executar na linha de comando faça: java -jar Lexical.jar "/home/path/Class.java"
         //Para testar na IDE, va em Run->Edit Configurations->Program Arguments e coloque o caminho,
         //para a pasta lo campo entre aspas EX: "/home/user/Teste.java"
-        String fileName = "/home/franciscone/Teste.java";
+        String fileName = "/home/franciscone/Faculdade/Codigos/compilers/compiler/Teste/TesteComErros.java";
 
         FileReader lexerTokens = new FileReader("src/main/JavaLexer.tokens");
         BufferedReader br = new BufferedReader(lexerTokens);

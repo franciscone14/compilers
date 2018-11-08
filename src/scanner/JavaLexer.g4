@@ -57,6 +57,8 @@ U_BIT_RIGHT_ATRIB: '>>>=';
 AND_ATRIB: '&=';
 XOR_ATRIB: '^=';
 OR_ATRIB: '|=';
+INC: '++';
+DEC: '--';
 
 //OPERADORES ARIMETICOS
 ADD: '+';
@@ -70,6 +72,8 @@ AND: '&&';
 IGUAL: '==';
 MAIOR_IGUAL: '>=';
 MENOR_IGUAL: '<=';
+MENOR: '<';
+MAIOR: '>';
 BITAND: '&';
 BITOR: '|';
 CARET: '^';
@@ -117,6 +121,10 @@ TRY: 'try';
 CATCH: 'catch';
 FINALLY: 'finally';
 
+TRUE: 'true' | 'TRUE';
+FALSE: 'false' | 'FALSE';
+
+NULL: 'null';
 
 STRING: ('"')((LETRA | ' ' | DIGITO | SIMBOLOS)*)('"');
 ID: LETRA (LETRA|DIGITO|'_')*;

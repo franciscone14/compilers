@@ -8,24 +8,25 @@
   <component name="ChangeListManager">
     <list default="true" id="4885d2c3-dfdc-4165-bf8d-e762192c0d68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/automata.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/automato.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/automata.dot" beforeDir="false" afterPath="$PROJECT_DIR$/automata.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/automato.png" beforeDir="false" afterPath="$PROJECT_DIR$/automato.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lexical/parser/JavaParser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lexical/parser/JavaParser.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lexical/scanner/JavaLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/JavaLexer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/JavaLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/JavaParser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/JavaParser.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/JavaParserListener.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/Parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/main.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/JavaLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/JavaLexer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/JavaLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/JavaLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/JavaParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/JavaParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/JavaParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/JavaParser.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/JavaParser.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/JavaParserBaseListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/JavaParserListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/.antlr/javaLexer.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/.antlr/javaLexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/.antlr/javaLexer.tokens" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parser/JavaParser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/JavaParser.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scanner/.antlr/JavaLexer.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scanner/.antlr/JavaLexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scanner/.antlr/JavaLexer.tokens" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scanner/JavaLexer.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/scanner/JavaLexer.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table_tokens.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/table_tokens.txt" beforeDir="false" afterPath="$PROJECT_DIR$/table_tokens.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,51 +97,53 @@
     <session id="85787205">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.44" value="2" />
-          <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.47" value="3" />
+          <entry key="project.open.time.46" value="2" />
+          <entry key="project.open.time.47" value="4" />
           <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.58" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="dot" value="3" />
-          <entry key="g4" value="15" />
-          <entry key="java" value="21" />
+          <entry key="g4" value="19" />
+          <entry key="java" value="23" />
           <entry key="png" value="4" />
           <entry key="py" value="1" />
-          <entry key="tokens" value="3" />
+          <entry key="tokens" value="4" />
           <entry key="txt" value="2" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ANTLR v4 grammar file" value="15" />
+          <entry key="ANTLR v4 grammar file" value="19" />
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="21" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="JAVA" value="23" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="g4" value="244" />
-          <entry key="java" value="742" />
+          <entry key="g4" value="436" />
+          <entry key="java" value="1157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ANTLR v4 grammar file" value="244" />
-          <entry key="JAVA" value="742" />
+          <entry key="ANTLR v4 grammar file" value="436" />
+          <entry key="JAVA" value="1157" />
         </counts>
       </usages-collector>
     </session>
@@ -148,31 +151,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/parser/JavaParser.g4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="302" column="39" lean-forward="true" selection-start-line="299" selection-start-column="98" selection-end-line="302" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scanner/JavaLexer.g4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -193,10 +175,28 @@
       <find>ERRO</find>
       <find>packa</find>
       <find>variableDeclaratorId</find>
-      <find>blockStatement</find>
-      <find>blockStatements</find>
       <find>formalParameter</find>
       <find>'!'</find>
+      <find>RecognitionException</find>
+      <find>_errHandler</find>
+      <find>packageName</find>
+      <find>methodDeclaration</find>
+      <find>methodDeclarator</find>
+      <find>blockStatements</find>
+      <find>statement</find>
+      <find>blockStatement</find>
+      <find>returnStatement</find>
+      <find>expression</find>
+      <find>logica</find>
+      <find>conditionalExpression</find>
+      <find>forSta</find>
+      <find>inc</find>
+      <find>postInc</find>
+      <find>INC</find>
+      <find>if</find>
+      <find>IF</find>
+      <find>p</find>
+      <find>forStatement</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -219,10 +219,11 @@
         <option value="$PROJECT_DIR$/src/JavaLexer.java" />
         <option value="$PROJECT_DIR$/src/scanner/JavaLexer.java" />
         <option value="$PROJECT_DIR$/src/main/JavaLexer.java" />
-        <option value="$PROJECT_DIR$/src/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/scanner/JavaLexer.g4" />
         <option value="$PROJECT_DIR$/src/main/JavaParserBaseListener.java" />
+        <option value="$PROJECT_DIR$/src/main/JavaParser.java" />
+        <option value="$PROJECT_DIR$/src/scanner/JavaLexer.g4" />
         <option value="$PROJECT_DIR$/src/parser/JavaParser.g4" />
+        <option value="$PROJECT_DIR$/src/main/Main.java" />
       </list>
     </option>
   </component>
@@ -242,8 +243,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,6 +280,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="scanner" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="compiler" type="b2602c69:ProjectViewProjectNode" />
+              <item name="compiler" type="462c0819:PsiDirectoryNode" />
+              <item name="Teste" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -291,7 +297,7 @@
     <property name="$PROJECT_DIR$/src/JavaLexer.g4::/gen-visitor" value="false" />
     <property name="$PROJECT_DIR$/src/parser/JavaParser.g4::/auto-gen" value="false" />
     <property name="$PROJECT_DIR$/src/parser/JavaParser.g4::/gen-listener" value="true" />
-    <property name="$PROJECT_DIR$/src/parser/JavaParser.g4::/gen-visitor" value="true" />
+    <property name="$PROJECT_DIR$/src/parser/JavaParser.g4::/gen-visitor" value="false" />
     <property name="$PROJECT_DIR$/src/parser/JavaParser.g4::/language" value="Java" />
     <property name="$PROJECT_DIR$/src/scanner/JavaLexer.g4::/auto-gen" value="false" />
     <property name="$PROJECT_DIR$/src/scanner/JavaLexer.g4::/gen-listener" value="true" />
@@ -299,19 +305,20 @@
     <property name="$PROJECT_DIR$/src/scanner/JavaLexer.g4::/language" value="Java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541620038839" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541711661361" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/antlr-4.7.1-complete.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python/scanner" />
+      <recent name="$PROJECT_DIR$/python/parser" />
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/python" />
       <recent name="$PROJECT_DIR$/src/scanner" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -364,12 +371,16 @@
       <workItem from="1541529923171" duration="3860000" />
       <workItem from="1541605401494" duration="1807000" />
       <workItem from="1541609398754" duration="3824000" />
-      <workItem from="1541675465250" duration="502000" />
+      <workItem from="1541675465250" duration="1001000" />
+      <workItem from="1541689696133" duration="973000" />
+      <workItem from="1541691204709" duration="4108000" />
+      <workItem from="1541700521554" duration="2642000" />
+      <workItem from="1541703919437" duration="5153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24050000" />
+    <option name="totallyTimeSpent" value="37425000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -383,7 +394,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26363635" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22727273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -392,17 +403,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.31085527" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.30858085" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32890365" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Tool Output" order="8" sideWeight="0.49848714" weight="0.42269737" />
+      <window_info anchor="bottom" id="Tool Output" order="8" sideWeight="0.49848714" weight="0.42079207" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32890365" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.16666667" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49848714" weight="0.31907895" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="12" weight="0.97861844" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50151515" side_tool="true" weight="0.7227723" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49848714" weight="0.31683168" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="12" sideWeight="0.49848485" weight="0.7227723" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -416,7 +427,7 @@
       <window_info anchor="right" id="Database" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24469697" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27458397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -425,17 +436,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.3128931" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.30974844" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32890365" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Tool Output" order="8" sideWeight="0.49848714" weight="0.23113208" />
+      <window_info anchor="bottom" id="Tool Output" order="8" sideWeight="0.49848714" weight="0.42138365" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32890365" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.16666667" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49848714" weight="0.3207547" />
-      <window_info anchor="bottom" id="ANTLR Preview" order="12" weight="0.32890365" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49848714" weight="0.31761006" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="12" visible="true" weight="0.5487421" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -495,7 +506,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scanner/JavaLexer.tokens" />
     <entry file="file://$PROJECT_DIR$/src/main/MyToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -578,32 +588,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/JavaParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="500" column="27" selection-start-line="500" selection-start-column="27" selection-end-line="500" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scanner/JavaLexer.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+        <state relative-caret-position="945">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scanner/JavaLexer.tokens">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/JavaParser.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="302" column="39" lean-forward="true" selection-start-line="299" selection-start-column="98" selection-end-line="302" selection-end-column="39" />
+        <state relative-caret-position="241">
+          <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -684,6 +698,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">
